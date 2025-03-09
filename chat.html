@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autókereskedés</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+        }
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+        button {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Autókereskedés</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Kezdőlap</a></li>
+                    <li class="nav-item"><a class="nav-link" href="autok.html">Autók</a></li>
+                    <li class="nav-item"><a class="nav-link" href="szolgaltatasok.html">Szolgáltatások</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rolunk.html">Rólunk</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kapcsolat.html">Kapcsolat</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h2>Panasz:</h2>
+    
+        <form id="contactForm" action="submit.php" method="POST">
+            <label for="name">Név:</label>
+            <input type="text" id="name" name="name" required>
+            <span class="error" id="nameError"></span>
+
+            <label for="email">E-mail cím:</label>
+            <input type="email" id="email" name="email" required>
+            <span class="error" id="emailError"></span>
+
+            <label for="phone">Telefonszám:</label>
+            <input type="tel" id="phone" name="phone">
+            <span class="error" id="phoneError"></span>
+
+            <label for="subject">Téma:</label>
+            <select id="subject" name="subject" required>
+                <option value="">Válassz egy témát</option>
+                <option value="kerdes">Kérdés</option>
+                <option value="javaslat">Javaslat</option>
+                <option value="panasz">Panasz</option>
+            </select>
+            <span class="error" id="subjectError"></span>
+
+            <label for="message">Üzenet:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <span class="error" id="messageError"></span>
+
+            <button type="submit">Küldés</button>
+         </form>
+    
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            let isValid = true;
+
+            // Név ellenőrzése
+            const name = document.getElementById("name").value.trim();
+            if (name.length < 10) {
+                document.getElementById("nameError").textContent = "A név legalább 10 karakter legyen!";
+                isValid = false;
+            } else {
+                document.getElementById("nameError").textContent = "";
+            }
+
+            // E-mail ellenőrzés
+            const email = document.getElementById("email").value.trim();
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!emailPattern.test(email)) {
+                document.getElementById("emailError").textContent = "Érvényes e-mail címet adj meg!";
+                isValid = false;
+            } else {
+                document.getElementById("emailError").textContent = "";
+            }
+
+            // Telefonszám ellenőrzés
+            const phone = document.getElementById("phone").value.trim();
+            const phonePattern = /^[0-9]+$/;
+            if (phone && (!phonePattern.test(phone) || phone.length < 7)) {
+                document.getElementById("phoneError").textContent = "Adj meg egy érvényes telefonszámot!";
+                isValid = false;
+            } else {
+                document.getElementById("phoneError").textContent = "";
+            }
+
+            // Téma ellenőrzés
+            const subject = document.getElementById("subject").value;
+            if (!subject) {
+                document.getElementById("subjectError").textContent = "Válassz egy témát!";
+                isValid = false;
+            } else {
+                document.getElementById("subjectError").textContent = "";
+            }
+
+            // Üzenet ellenőrzése
+            const message = document.getElementById("message").value.trim();
+            if (message.length < 10) {
+                document.getElementById("messageError").textContent = "Az üzenet legalább 10 karakter legyen!";
+                isValid = false;
+            } else {
+                document.getElementById("messageError").textContent = "";
+            }
+
+            if (!isValid) {
+                event.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>

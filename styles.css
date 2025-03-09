@@ -5,13 +5,46 @@ body {
 
 h1 {
     color: #343a40;
+    
 }
 
 .navbar-brand {
     font-weight: bold;
+    
 }
 
 .container {
     text-align: center;
     padding-top: 20px;
+}
+.active{
+   color: white ;
+} 
+.tabla{
+
+    margin:100px;
+}
+.oszlop{
+        
+        margin: 20px;
+        border: 1px solid;
+        width: 200px;
+        height: 200px;
+        box-shadow: 0 0 3px;
+        display: inline-block;
+        
+        
+}
+.sor{
+    border: 1px;
+    padding: 10px;
+}
+.köz{
+    text-align: center;
+    text-shadow: 10px;
+    
+}
+.kocsik{
+    width: 196px;
+    height:  196px;
 }
