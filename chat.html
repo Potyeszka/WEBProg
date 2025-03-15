@@ -7,11 +7,33 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
     <style>
-       
+       .container {
+    margin-top: 20px;
+}
+.navbar {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f8c471;
+}
         form {
             display: flex;
             flex-direction: column;
             gap: 10px;
+            margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
         label {
             font-weight: bold;
@@ -30,8 +52,9 @@
             background-color: blue;
             color: white;
             padding: 10px;
-            border: none;
             cursor: pointer;
+            border-radius: 5px;
+    font-size: 18px;
         }
         button:hover {
             background-color: darkblue;
@@ -52,6 +75,7 @@
                     <li class="nav-item"><a class="nav-link" href="szolgaltatasok.html">Szolgáltatások</a></li>
                     <li class="nav-item"><a class="nav-link" href="rolunk.html">Rólunk</a></li>
                     <li class="nav-item"><a class="nav-link" href="kapcsolat.html">Kapcsolat</a></li>
+                    <li class="nav-item"><a class="nav-link" href="chat.html">Hibajelentés</a></li>
                 </ul>
             </div>
         </div>
