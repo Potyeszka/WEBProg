@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <script>
+        var isMobile=false;
+        if(screen.availWidth <= 800) {
+            isMobile=true;
+        }
+    </script>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">Autókereskedés</a>
@@ -29,15 +35,19 @@
 
     <div class="szolgaltatasok">
         <h1 class="szolgh1">Autókereskedés Szolgáltatásai</h1>
-        <ul class="szolgul">
-            <li class="szolgli"><strong>Új és Használt Autók Értékesítése</strong> - Széles választék garanciával.</li>
-            <img src="vehiclesell.jpg" alt="Új és Használt Autók Értékesítése" class="szolgimg"> 
-            <p class="szolgszoveg">Széles választékban kínálunk új és használt járműveket, garanciával és kedvező finanszírozási lehetőségekkel.</p>
-            <li class="szolgli"><strong>Autóbeszámítás és Felvásárlás</strong> - Gyors és egyszerű megoldások.</li>
-            <li class="szolgli"><strong>Finanszírozás és Biztosítás</strong> - Kedvező autóhitelek és biztosítások.</li>
-            <li class="szolgli"><strong>Szerviz és Karbantartás</strong> - Profi javítás és alkatrészellátás.</li>
-            <li class="szolgli"><strong>Autóbérlés és Próbavezetés</strong> - Tesztelési és bérlési lehetőségek.</li>
-        </ul>
+        <table class="szolgtable">
+            <tr>
+                <ul class="szolgul">
+                    <li class="szolgli"><strong>Új és Használt Autók Értékesítése</strong> - Széles választék garanciával.</li>
+                    <img src="vehiclesell.jpg" alt="Új és Használt Autók Értékesítése" class="szolgimg"> 
+                    <p class="szolgszoveg">Széles választékban kínálunk új és használt járműveket, garanciával és kedvező finanszírozási lehetőségekkel.</p>
+                    <li class="szolgli"><strong>Autóbeszámítás és Felvásárlás</strong> - Gyors és egyszerű megoldások.</li>
+                    <li class="szolgli"><strong>Finanszírozás és Biztosítás</strong> - Kedvező autóhitelek és biztosítások.</li>
+                    <li class="szolgli"><strong>Szerviz és Karbantartás</strong> - Profi javítás és alkatrészellátás.</li>
+                    <li class="szolgli"><strong>Autóbérlés és Próbavezetés</strong> - Tesztelési és bérlési lehetőségek.</li>
+                </ul>
+            </tr>
+    </table>
     </div>
 
 </body>
