@@ -6,19 +6,23 @@
     <title>Autókereskedés</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
-    
-</head>
-<body>
     <style>
         .navbar-nav .nav-link {
             font-size: 1.1rem;
             transition: color 0.3s ease-in-out;
         }
-        
+
         .navbar-nav .nav-link:hover {
             color: #f8c471;
         }
+
+        h1.köz {
+            text-align: center;
+            margin: 30px 0;
+        }
     </style>
+</head>
+<body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">Autókereskedés</a>
@@ -38,239 +42,108 @@
         </div>
     </nav>
 
+    <div class="container my-5">
+        <h1 class="köz">Aktuális termékeink</h1>
+        <div class="table-responsive">
+            <table class="table table-striped table-hover table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Cikkszám</th>
+                        <th>Autó típusa</th>
+                        <th>Alkatrész</th>
+                        <th>Csere ideje (óra)</th>
+                        <th>Garancia</th>
+                        <th>Anyag</th>
+                        <th>Ár (Ft)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>BOS1234</td>
+                        <td>Opel Astra H</td>
+                        <td>Féktárcsa</td>
+                        <td>1.5</td>
+                        <td>2 év</td>
+                        <td>Acél</td>
+                        <td>22 500</td>
+                    </tr>
+                    <tr>
+                        <td>SKF9876</td>
+                        <td>Volkswagen Golf 6</td>
+                        <td>Kerékcsapágy</td>
+                        <td>2</td>
+                        <td>1 év</td>
+                        <td>Fém</td>
+                        <td>17 800</td>
+                    </tr>
+                    <tr>
+                        <td>NGK0012</td>
+                        <td>Ford Focus 2</td>
+                        <td>Gyújtógyertya</td>
+                        <td>0.5</td>
+                        <td>6 hónap</td>
+                        <td>Kerámia/fém</td>
+                        <td>3 200</td>
+                    </tr>
+                    <tr>
+                        <td>MAH4567</td>
+                        <td>Renault Megane 3</td>
+                        <td>Olajszűrő</td>
+                        <td>0.7</td>
+                        <td>1 év</td>
+                        <td>Fém/papír</td>
+                        <td>2 800</td>
+                    </tr>
+                    <tr>
+                        <td>SAC3321</td>
+                        <td>BMW E46</td>
+                        <td>Kuplung szett</td>
+                        <td>4</td>
+                        <td>2 év</td>
+                        <td>Acél/szövet</td>
+                        <td>68 900</td>
+                    </tr>
+                    <tr>
+                        <td>DAY2211</td>
+                        <td>Peugeot 206</td>
+                        <td>Vezérműszíj készlet</td>
+                        <td>3.5</td>
+                        <td>3 év</td>
+                        <td>Gumi/fém</td>
+                        <td>32 400</td>
+                    </tr>
+                    <tr>
+                        <td>HELL5566</td>
+                        <td>Toyota Corolla E12</td>
+                        <td>Hűtőventilátor</td>
+                        <td>1.2</td>
+                        <td>2 év</td>
+                        <td>Műanyag/fém</td>
+                        <td>24 700</td>
+                    </tr>
+                    <tr>
+                        <td>VALE0077</td>
+                        <td>Skoda Octavia II</td>
+                        <td>Generátor</td>
+                        <td>2.5</td>
+                        <td>1 év</td>
+                        <td>Alumínium</td>
+                        <td>54 300</td>
+                    </tr>
+                    <tr>
+                        <td>DEL8899</td>
+                        <td>Suzuki Swift</td>
+                        <td>Lengéscsillapító</td>
+                        <td>1.8</td>
+                        <td>2 év</td>
+                        <td>Acél</td>
+                        <td>21 900</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 
-    <h1 class="köz">Aktuális termékeink</h1>
-    <table class="tabla">
-        
-            
-        
-        <tr class="sor">
-            <td class="oszlop">kocsi</td>
-            <td class="oszlop">2</td>
-            <td class="oszlop">3</td>
-            <td class="oszlop">4</td>
-            <td class="oszlop">5</td>
-            <td class="oszlop">6</td>
-            <td class="oszlop">7</td>
-        </tr>
-        <tr class="sor">
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-        </tr>
-        <tr class="sor">
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-        </tr>
-        <tr class="sor">
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-        </tr>
-        <tr class="sor">
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-        </tr>
-        <tr class="sor">
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-        </tr>
-        <tr class="sor">
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-        </tr>
-        <tr class="sor">
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-        </tr>
-        <tr class="sor">
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-        </tr>
-        <tr class="sor">
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-        </tr>
-        <tr class="sor">
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-        </tr>
-        <tr class="sor">
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-        </tr>
-        <tr class="sor">
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-        </tr>
-        <tr class="sor">
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-        </tr>
-        <tr class="sor">
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-        </tr>
-        <tr class="sor">
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-        </tr>
-        <tr class="sor">
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-        </tr>
-        <tr class="sor">
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-        </tr>
-        <tr class="sor">
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-        </tr>
-        <tr class="sor">
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-        </tr>
-        <tr class="sor">
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-        </tr>
-        <tr class="sor">
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-        </tr>
-        <tr class="sor">
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-        </tr>
-        <tr class="sor">
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-        </tr>
-        <tr class="sor">
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-            <td class="oszlop"></td>
-        </tr>
-
-
-    </table>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
